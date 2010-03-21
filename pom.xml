@@ -34,8 +34,14 @@
   <dependencies>
     <dependency>
       <groupId>net.liftweb</groupId>
-      <artifactId>lift-mapper</artifactId>
+      <artifactId>lift-webkit</artifactId>
       <version>2.0-M3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.liftweb</groupId>
+					<artifactId>lift-json</artifactId>
+				</exclusion>
+			</exclusions>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
